@@ -1,0 +1,145 @@
+:root {
+	--body-background: #8a84eb;
+	--form-background: #3534c5;
+	--text-color: #9090ff;
+	--font-family: "VT323", monospace;
+	--shadow-color: black;
+}
+
+html {
+	font-size: 16px;
+	font-family: var(--font-family);
+	text-shadow: 1px 1px var(--shadow-color);
+	color: var(--text-color);
+}
+
+@keyframes openingApp {
+	0% {
+		transform: scale(0, 0);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+body {
+	animation: 1000ms 0s 1 openingApp;
+	background-color: var(--body-background);
+	background-image: url("https://www.transparenttextures.com/patterns/grid-noise.png");
+	margin: 0;
+}
+header {
+	text-align: center;
+	margin: 3rem auto 0 auto;
+	background-color: var(--form-background);
+	width: 66vw;
+	box-shadow: 1.4rem 1.4rem var(--shadow-color);
+}
+
+h1 {
+	font-size: 4rem;
+	margin: 0;
+	padding-top: 1.4rem;
+}
+
+.short-text {
+	display: none;
+}
+
+p {
+	font-size: 2rem;
+	margin: 0;
+	padding-bottom: 2.5rem;
+	box-shadow: 1.4rem 1.4rem var(--shadow-color);
+}
+
+form {
+	display: flex;
+	width: 66vw;
+	background-color: var(--form-background);
+	margin: 0 auto 3rem auto;
+	font-size: 2rem;
+	box-shadow: 1.4rem 1.4rem var(--shadow-color);
+}
+
+form > ul {
+	width: 66vw;
+	padding: 0;
+	margin: 0;
+	box-shadow: 1.4rem 1.4rem var(--shadow-color);
+}
+
+form > ul > li {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+form > ul > li > input,
+select,
+textarea {
+	width: 50vw;
+	background-color: var(--form-background);
+	font-family: var(--font-family);
+	font-size: 2rem;
+	text-shadow: 1px 1px var(--shadow-color);
+	color: var(--text-color);
+	text-transform: uppercase;
+	border-style: none;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+#dropdown {
+	color: var(--text-color);
+	text-shadow: 1px 1px var(--shadow-color);
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset > ul {
+	list-style: none;
+	padding: 0;
+}
+
+button {
+	background-color: var(--form-background);
+	color: var(--text-color);
+	font-size: 3rem;
+	font-family: var(--font-family);
+	text-shadow: 1px 1px var(--shadow-color);
+	margin: 5rem auto 1.4rem auto;
+}
+
+@media (max-width: 1279px) {
+	#title {
+		display: none;
+	}
+
+	.short-text {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 13px;
+	}
+
+	form > ul > li > input,
+	select,
+	textarea {
+		width: 100%;
+	}
+}

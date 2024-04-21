@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Ostap Yelisavetskyi" />
+		<meta name="description" content="Survey Form" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="Survey Form" />
+		<meta property="og:title" content="Survey Form" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">**** JOJOS BIZZARE ADVENTURE ****</h1>
+			<h1 class="short-text">JOJOS BIZZARE ADVENTURE</h1>
+			<p id="description">FAN SURVEY</p>
+		</header>
+		<form id="survey-form">
+			<ul>
+				<li>
+					<label id="name-label" for="name">NAME</label>
+					<input
+						type="text"
+						name="user-name"
+						id="name"
+						placeholder="Kyle"
+						required
+						autofocus
+					/>
+				</li>
+				<li>
+					<label id="email-label" for="email">EMAIL</label>
+					<input
+						type="email"
+						name="user-email"
+						id="email"
+						placeholder="KyleWeb@gmail.com"
+						required
+					/>
+				</li>
+				<li>
+					<label id="number-label" for="number">AGE</label>
+					<input
+						type="number"
+						name="user-age"
+						id="number"
+						placeholder="18"
+						required
+						min="1"
+						max="256"
+					/>
+				</li>
+				<li>
+					<label id="dropdown-label" for="dropdown">FAVORITE PART</label>
+					<select name="user-part" id="dropdown" required>
+						<option value="">CLICK TO CHOOSE</option>
+						<option value="phantom-blood">PHANTOM BLOOD</option>
+						<option value="battle-tendency">BATTLE TENDENCY</option>
+						<option value="stardus-crusaders">STARDUST CRUSADERS</option>
+						<option value="diamond-is-unbreakable">
+							DIAMOND IS UNBREAKABLE
+						</option>
+						<option value="golden-wind">GOLDEN WIND</option>
+						<option value="stone-ocean">STONE OCEAN</option>
+						<option value="steel-ball-run">STELL BALL RUN</option>
+						<option value="jojolion">JOJOLION</option>
+					</select>
+				</li>
+				<li>
+					<label id="comment-label" for="comment"
+						>FAVORITE MUSICAL REFERENCES</label
+					>
+					<textarea
+						name="user-musical-references"
+						id="comment"
+						placeholder="QUEEN, ELVIS PRESLEY"
+						required
+					></textarea>
+				</li>
+				<li>
+					<fieldset>
+						<legend>FAVORITE JOJO</legend>
+						<ul>
+							<li>
+								<input
+									type="radio"
+									id="jonathan"
+									name="user-jojo"
+									value="jonathan-joestar"
+								/>
+								<label for="jonathan">JONATHAN JOESTAR</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="joseph"
+									name="user-jojo"
+									value="joseph-joestar"
+								/>
+								<label for="joseph">JOSEPH JOESTAR</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="jotaro"
+									name="user-jojo"
+									value="jotaro-kujo"
+								/>
+								<label for="jotaro">JOTARO KUJO</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="josuke"
+									name="user-jojo"
+									value="josuke-higashikata"
+								/>
+								<label for="josuke">JOSUKE HIGASHIKATA</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="giorno"
+									name="user-jojo"
+									value="giorno-giovanna"
+								/>
+								<label for="giorno">GIORNO GIOVANNA</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="jolyne"
+									name="user-jojo"
+									value="jolyne-cujoh"
+								/>
+								<label for="jolyne">JOLYNE CUJOH</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="johnny"
+									name="user-jojo"
+									value="johnny joestar"
+									checked
+								/>
+								<label for="johnny">JOHNNY JOESTAR</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="josuke-8"
+									name="user-jojo"
+									value="josuke higashikata-8"
+								/>
+								<label for="josuke-8">JOSUKE HIGASHIKATA 8</label>
+							</li>
+						</ul>
+					</fieldset>
+				</li>
+				<li>
+					<fieldset>
+						<legend>FAVORITE JOFOE</legend>
+						<ul>
+							<li>
+								<input type="checkbox" id="dio" name="user-jofoe" value="dio" />
+								<label for="dio">DIO BRANDO</label>
+							</li>
+							<li>
+								<input
+									type="checkbox"
+									id="wamuu"
+									name="user-jofoe"
+									value="wamuu"
+								/>
+								<label for="wamuu">WAMUU</label>
+							</li>
+							<li>
+								<input
+									type="checkbox"
+									id="kira"
+									name="user-jofoe"
+									value="kira"
+									checked
+								/>
+								<label for="kira">KIRA YOSHIKAGE</label>
+							</li>
+							<li>
+								<input
+									type="checkbox"
+									id="diavolo"
+									name="user-jofoe"
+									value="diavolo"
+								/>
+								<label for="diavolo">DIAVOLO</label>
+							</li>
+							<li>
+								<input
+									type="checkbox"
+									id="pucci"
+									name="user-jofoe"
+									value="pucci"
+								/>
+								<label for="pucci">ENRICO PUCCI</label>
+							</li>
+							<li>
+								<input
+									type="checkbox"
+									id="valentine"
+									name="user-jofoe"
+									value="valentine"
+								/>
+								<label for="valentine">FUNNY VALENTINE</label>
+							</li>
+							<li>
+								<input
+									type="checkbox"
+									id="tooru"
+									name="user-jofoe"
+									value="tooru"
+								/>
+								<label for="tooru">TOORU</label>
+							</li>
+						</ul>
+					</fieldset>
+				</li>
+				<li class="button">
+					<button type="submit" id="submit">Submit</button>
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
